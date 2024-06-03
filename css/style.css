@@ -95,4 +95,13 @@ p {
     }
 }
 
+@media (min-width:1440px) {
 
+   #cta__title {
+    font-size: 2.88rem;
+    line-height: 1.19;
+   }
+
+   
+    
+}
