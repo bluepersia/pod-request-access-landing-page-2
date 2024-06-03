@@ -7,6 +7,7 @@
     --c-White: white;
     --c-Grey: #5A668A;
     --c-LightGrey: #C2CBE5;
+    --c-Error: #FB3E3E;
 }
 
 body {
@@ -26,3 +27,59 @@ body {
 * :last-child {
     margin-bottom: 0;
 }
+
+
+/* Typography */
+
+html {
+    font-size: 15px;
+}
+
+body {
+    font-family: "Chivo", sans-serif;
+    font-weight: 300;
+    color: var(--c-LightGrey);
+}
+
+p {
+    line-height: 1.5;
+}
+
+#cta__title 
+{
+    font-size: 1.73rem;
+    color: var(--c-White);
+    text-transform: uppercase;
+    font-weight: 300;
+    line-height: 1.46;
+}
+
+#cta__title .color--cyan
+{
+    color: var(--c-Cyan);
+}
+
+
+
+#cta__btn, #cta__input {
+    font-weight: bold;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+#cta__input {
+    color: var(--c-White);
+}
+
+
+
+#cta__input-error {
+    color: var(--c-Error);
+}
+
+#cta__btn 
+{
+    color: var(--c-DarkerGrey);
+}
+
+
