@@ -105,3 +105,345 @@ p {
    
     
 }
+
+
+
+/* Layout */
+
+body {
+    background-image: url(../assets/mobile/image-host.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--c-DarkerGrey);
+    background-blend-mode: multiply;
+    min-height: 100vh;
+    text-align: center;
+}
+
+#header__logo {
+    width: 134px;
+}
+
+#cta {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+#cta__title {
+    order:1;
+}
+
+#cta__body {
+    order:2;
+}
+
+#cta__companies {
+    order: 3;
+    display: flex;
+    justify-content: space-between;
+}
+
+#cta__form {
+    order: 4;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.cta__logo 
+{
+    object-fit: contain;
+}
+
+#cta__logo-spotify 
+{
+    width: 56px;
+}
+
+#cta__logo-apple 
+{
+    width: 45px;
+}
+
+#cta__logo-google
+{
+    width: 73px;
+}
+
+#cta__logo-pocket {
+    width: 77px;
+}
+
+#cta__input-container, #cta__input, #cta__btn {
+    width: 100%;
+}
+
+
+
+#cta__input, #cta__btn 
+{
+    border:none;
+    border-radius: 28px;
+}
+
+#cta__input {
+    background-color: var(--c-DarkGrey);
+}
+#cta__input:focus {
+    outline:solid 1px var(--c-White);
+}
+
+#cta__input-container {
+    position: relative;
+}
+
+
+#cta__input-error {
+    position: absolute;
+    top: 10px;
+    left:0px;
+    transform: translateY(100%);
+    opacity: 0%;
+    transition: opacity 300ms;
+}
+
+#cta__input-container.invalid #cta__input-error 
+{
+    opacity: 100%;
+}
+#cta__btn 
+{
+    background-color: var(--c-Cyan);
+}
+
+#footer__img {
+    display: none;
+}
+
+/* Margins */
+
+#header {
+    margin-bottom: 3.8em;
+}
+
+
+#cta__body {
+    margin-bottom: 2.2em;
+}
+
+#cta__companies {
+    margin-bottom: 3.2em;
+}
+
+/* Paddings */
+
+body {
+    padding: 4.13em 6.4% 6.2em;
+}
+
+
+#cta__input
+{
+    padding: .8em 2.13em;
+}
+#cta__input-container.invalid 
+{
+    padding-bottom: 2em;
+}
+
+#cta__input-error {
+    padding-left: 2.66em;
+    text-align: left;
+}
+
+#cta__btn {
+    padding: .8em 1.92em;
+}
+
+
+@media (min-width:768px)
+{
+    body {
+        text-align: left;
+        min-height: auto;
+        background-image: none;
+    }
+
+    #container {
+
+        background-image: url(../assets/tablet/image-host.jpg);
+        background-blend-mode: normal;
+        background-size:contain;
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-color: var(--c-DarkerGrey);
+    }
+    #cta {
+        background-color: var(--c-DarkerGrey);
+        width: 92.2%;
+        max-width: 635px;
+    }
+
+    #cta__form 
+    {
+        order: 3;
+        flex-direction: row;
+        align-items: center;
+        background-color: var(--c-DarkGrey);
+        border-radius: 28px;
+        gap: 0;
+        max-width: 447px;
+    }
+
+    #cta__btn
+    {
+        width: 37.9%;
+    }
+
+    #cta__input-container {
+        width: 62.1%;
+    }
+
+   
+    #cta__companies {
+        order:4;
+        justify-content: start;
+        gap: 5%;
+    }
+
+    #cta__logo-spotify 
+    {
+        width: 96px;
+    }
+
+    #cta__logo-apple {
+        width: 76px;
+    }
+
+    #cta__logo-google 
+    {
+        width: 125px;
+    }
+
+    #cta__logo-pocket 
+    {
+        width: 129px;
+    }
+
+    #footer {
+        background-color: var(--c-DarkerGrey);
+        width: 100%;
+    }
+
+    #footer__img {
+        display: block;
+        width: 232px;
+    }
+
+    /* Margins */
+
+#header {
+    margin-bottom: 8.4em;
+}
+
+
+#cta__body {
+    margin-bottom: 2.27em;
+}
+
+#cta__companies {
+    margin-bottom: 0;
+}
+
+#cta__form {
+    margin-bottom: 3.55em;
+}
+
+#footer__img {
+    margin-top: 8.5em;
+}
+
+/* Paddings */
+
+body {
+    padding: 0;
+}
+
+#container {
+    padding: 2.22em 5.2% 0;
+}
+
+#cta {
+    padding: 5.16em 0 0;
+}
+
+#cta__form {
+
+        padding-right: .27em;
+}
+
+#cta__input
+{
+    padding: 1.4em 2.28em;
+}
+
+
+
+#cta__btn {
+    padding: 1em 1.92em;
+}
+
+#footer {
+    padding: 0 5.2%;
+}
+}
+
+
+
+@media (min-width: 1440px)
+{
+    #container 
+    {
+        background-position: top 7.2em right;
+        background-image: url(../assets/desktop/image-host.jpg);
+    }
+
+    #cta {
+        max-width: 723px;
+    }
+
+    #footer {
+        position: relative;
+    }
+
+    #footer__img {
+        position: absolute;
+        margin: 0;
+        right: 0px;
+        transform: translateY(-50%);
+    }
+
+        /* Margins */
+
+#header {
+    margin-bottom: 5.72em;
+}
+
+
+
+/* Paddings */
+
+
+#container {
+    padding: 5.66em 11.4% 0;
+}
+
+#cta {
+    padding: 4.88em 0 0;
+    padding-right: 3.22em;
+}
+
+
+
+
+}
