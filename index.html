@@ -10,11 +10,31 @@
   <title>Frontend Mentor | Pod request access landing page</title>
 </head>
 <body>
-  Publish your podcasts everywhere.
 
-  Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, 
-  Apple Podcasts, Google Podcasts, Pocket Casts and more!
+  <header id="header">
+    <img src="./assets/desktop/logo.svg" id="header__logo" alt="Logo"/>
+  </header>
 
-  Request access
+  <main id="main">
+    <div id="cta">
+      <h1 id="cta__title"><span class="color--cyan">Publish your podcasts</span><br/>everywhere.</h1>
+      <p id="cta__body">Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, 
+        Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
+      <form id="cta__form">
+        <div id="cta__input-container">
+          <input id="cta__input" type="text" placeholder="Email Address" name="email"/>
+          <p id="cta__input-error">Must be a valid email.</p>
+        </div>
+        <button type="submit" id="cta__btn">Request Access</button>
+      </form>
+      <div id="cta__companies">
+        <img src="./assets/desktop/spotify.svg" id="cta__logo-spotify" class="cta__logo" alt="Spotify logo"/>
+        <img src="./assets/desktop/apple-podcast.svg" id="cta__logo-apple" class="cta__logo" alt="Apple podcast logo"/>
+        <img src="./assets/desktop/google-podcasts.svg" id="cta__logo-google" class="cta__logo" alt="Google podcasts logo"/>
+        <img src="./assets/desktop/pocket-casts.svg" id="cta__logo-pocket" class="cta__logo" alt="Pocket casts logo"/>
+      </div>
+    </div>
+  </main>
+
 </body>
 </html>
