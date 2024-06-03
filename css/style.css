@@ -149,6 +149,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1em;
+    position: relative;
 }
 .cta__logo 
 {
@@ -193,27 +194,29 @@ body {
     outline:solid 1px var(--c-White);
 }
 
-#cta__input-container {
-    position: relative;
-}
-
 
 #cta__input-error {
     position: absolute;
-    top: 10px;
+    top: 2.5em;
     left:0px;
     transform: translateY(100%);
     opacity: 0%;
     transition: opacity 300ms;
 }
 
-#cta__input-container.invalid #cta__input-error 
+#cta__form.invalid #cta__input-error 
 {
     opacity: 100%;
 }
 #cta__btn 
 {
     background-color: var(--c-Cyan);
+    transition: background-color 300ms;
+    cursor: pointer;
+}
+
+#cta__btn:hover {
+    background-color: var(--c-CyanLight);
 }
 
 #footer__img {
@@ -246,9 +249,9 @@ body {
 {
     padding: .8em 2.13em;
 }
-#cta__input-container.invalid 
+#cta__form.invalid 
 {
-    padding-bottom: 2em;
+    margin-bottom: 2em;
 }
 
 #cta__input-error {
