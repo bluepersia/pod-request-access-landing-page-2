@@ -397,3 +397,53 @@ body {
     padding: 0 5.2%;
 }
 }
+
+
+
+@media (min-width: 1440px)
+{
+    #container 
+    {
+        background-position: top 7.2em right;
+        background-image: url(../assets/desktop/image-host.jpg);
+    }
+
+    #cta {
+        max-width: 723px;
+    }
+
+    #footer {
+        position: relative;
+    }
+
+    #footer__img {
+        position: absolute;
+        margin: 0;
+        right: 0px;
+        transform: translateY(-50%);
+    }
+
+        /* Margins */
+
+#header {
+    margin-bottom: 5.72em;
+}
+
+
+
+/* Paddings */
+
+
+#container {
+    padding: 5.66em 11.4% 0;
+}
+
+#cta {
+    padding: 4.88em 0 0;
+    padding-right: 3.22em;
+}
+
+
+
+
+}
