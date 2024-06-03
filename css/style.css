@@ -1,0 +1,28 @@
+:root 
+{
+    --c-Cyan:  #54E6AF;
+    --c-CyanLight: #B3FFE2;
+    --c-DarkGrey: #2C344B;
+    --c-DarkerGrey: #121725;
+    --c-White: white;
+    --c-Grey: #5A668A;
+    --c-LightGrey: #C2CBE5;
+}
+
+body {
+    margin: 0;
+    background-color: var(--c-DarkerGrey);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+* :first-child {
+    margin-top: 0;
+}
+
+* :last-child {
+    margin-bottom: 0;
+}
